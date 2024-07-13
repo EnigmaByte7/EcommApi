@@ -23,7 +23,7 @@ const paint = require('./paint')
 const oils = require('./oils')
 
 router.get('/products/sofa',(req,res)=>{
-    res.send('Hello');
+    res.json(sofa);
 })
 router.get('/products/chair',(req,res)=>{
     res.json(chair);
