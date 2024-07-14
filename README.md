@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Hey there 👋!
+This is the backend RESTful api built using express and deployed in a serverless environmet on render.
+The api is capable of handling GET, and POST requests effectively handling the insertion, deletion , updation of the records in my mongoDB cluster.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Using this api
+Feel free to use this api in your project.
+The api provides json data of products (particularly home decor products) 🏠 for Ecommerce apps including categories like sofa, clocks, table, bookshelves... 
+each product has following properties :
 
-## Available Scripts
+-id
+-name
+-price
+-brand
+-description
+-image_url
+-rating
+-category
 
-In the project directory, you can run:
+index.js is the main source file, all the routes are handled by user.js (projecting the link /api/users/..)
+Use this endpoint `https://ecomm-api-enigmaybyte.onrender.com/api/users/products/` to access the json data ...
+it supports following categories 
 
-### `npm start`
+-sofa
+-table
+-chair
+-bed
+-vase
+-shelf
+-clock
+-statues
+-lights1
+-lights2
+-lights3
+-candle
+-mirror
+-diffuser
+-art
+-oils
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+So, if you want to pull the json of all vases, all u need to do is call this endpint ... `https://ecomm-api-enigmaybyte.onrender.com/api/users/products/vase`, and thats it.
+ A result example is attached here 	(/response.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ## If this api proves useful for you consider giving a star ⭐ to this repo 😸
+ ## Or if you find any unexpected behavior or any mistakes please open a issue
