@@ -1,44 +1,66 @@
-# Hey there 👋!
-This is the backend RESTful api built using express and deployed in a serverless environmet on render.\
-The api is capable of handling GET, and POST requests effectively handling the insertion, deletion , updation of the records in my mongoDB cluster.
+# Welcome to the Express RESTful API! 👋
 
-# Using this api
-Feel free to use this api in your project.\
-The api provides json data of products (particularly home decor products) 🏠 for Ecommerce apps including categories like sofa, clocks, table, bookshelves... \
-each product has following properties :
+This backend API is built using Express and deployed in a serverless environment on Render. It effectively handles GET and POST requests for managing records in a MongoDB cluster, including insertion, deletion, and updates.
 
--id
--name
--price
--brand
--description
--image_url
--rating
--category
+## Using This API
 
-index.js is the main source file, all the routes are handled by user.js (projecting the link /api/users/..)\
-Use this endpoint `https://ecomm-api-enigmaybyte.onrender.com/api/users/products/` to access the json data ...\
-it supports following categories \
+Feel free to integrate this API into your project! It provides JSON data of home decor products 🏠 for eCommerce apps, featuring categories like:
 
--sofa
--table
--chair
--bed
--vase
--shelf
--clock
--statues
--lights1
--lights2
--lights3
--candle
--mirror
--diffuser
--art
--oils
+- Sofa
+- Clocks
+- Tables
+- Bookshelves
+- And more!
 
-So, if you want to pull the json of all vases, all u need to do is call this endpint ... `https://ecomm-api-enigmaybyte.onrender.com/api/users/products/vase`, and thats it.\
- A result example is attached here 	(/response.PNG)\
- 
- ## If this api proves useful for you consider giving a star ⭐ to this repo 😸
- ## Or if you find any unexpected behavior or any mistakes please open a issue
+### Product Properties
+
+Each product includes the following properties:
+
+- **id**
+- **name**
+- **price**
+- **brand**
+- **description**
+- **image_url**
+- **rating**
+- **category**
+
+### Accessing the API
+
+The main source file is `index.js`, with all routes handled by `user.js`, accessible via the link `/api/users/...`.
+
+To access the JSON data, use the endpoint:  
+`https://ecomm-api-enigmaybyte.onrender.com/api/users/products/`
+
+### Available Categories
+
+The API supports the following categories:
+
+- Sofa
+- Table
+- Chair
+- Bed
+- Vase
+- Shelf
+- Clock
+- Statues
+- Lights1
+- Lights2
+- Lights3
+- Candle
+- Mirror
+- Diffuser
+- Art
+- Oils
+
+For example, to retrieve all vases, simply call:  
+`https://ecomm-api-enigmaybyte.onrender.com/api/users/products/vase`
+
+### Example Response
+
+An example response is attached here:  
+![Example Response](/response.PNG)
+
+## Feedback
+
+If this API proves useful, consider giving a star ⭐ to this repository! If you encounter any unexpected behavior or issues, please open an issue.
